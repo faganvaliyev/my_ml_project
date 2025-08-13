@@ -5,7 +5,7 @@ from src.models.tune_model import tune_xgb
 import joblib
 
 if __name__ == "__main__":
-    df = load_and_clean_data('data/external/multisim_dataset.parquet')
+    df = load_and_clean_data('data/external/data.parquet')
     X, y = df.drop('target', axis=1), df['target']
 
     numeric_cols = X.select_dtypes(include='number').columns.tolist()
