@@ -11,7 +11,7 @@ if __name__ == "__main__":
     numeric_cols = X.select_dtypes(include='number').columns.tolist()
     categoric_cols = X.select_dtypes(exclude='number').columns.tolist()
 
-    preprocessor = create_preprocessor(numeric_cols, categoric_cols)
+    # preprocessor = create_preprocessor(numeric_cols, categoric_cols)
     metrics = train_and_evaluate(X, y, preprocessor)
     print("Training metrics:", metrics)
 
