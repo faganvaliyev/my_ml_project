@@ -12,7 +12,6 @@ def train_and_evaluate(X, y, preprocessor):
     ])
     scoring = ['accuracy','precision','recall','f1','roc_auc']
     kf = KFold(n_splits=5, shuffle=True, random_state=90)
-    cv_results = cross_validate(pipeline, X_train, y_train, cv=kf, scoring=scoring)
     
     pipeline.fit(X_train, y_train)
     y_pred = pipeline.predict(X_test)
