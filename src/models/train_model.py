@@ -1,5 +1,5 @@
 from sklearn.pipeline import Pipeline
-from sklearn.model_selection import train_test_split, cross_validate, KFold
+from sklearn.model_selection import train_test_split,
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix, ConfusionMatrixDisplay, roc_curve, auc
 import matplotlib.pyplot as plt
@@ -10,8 +10,6 @@ def train_and_evaluate(X, y, preprocessor):
         ('preprocessor', preprocessor),
         ('model', XGBClassifier(eval_metric='logloss'))
     ])
-    scoring = ['accuracy','precision','recall','f1','roc_auc']
-    kf = KFold(n_splits=5, shuffle=True, random_state=90)
     
     pipeline.fit(X_train, y_train)
     y_pred = pipeline.predict(X_test)
