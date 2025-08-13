@@ -1,5 +1,5 @@
 from sklearn.pipeline import Pipeline
-from sklearn.model_selection import train_test_split,
+from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix, ConfusionMatrixDisplay, roc_curve, auc
 import matplotlib.pyplot as plt
