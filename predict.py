@@ -1,6 +1,5 @@
 import joblib
 import pandas as pd
-from src.features.build_features import create_preprocessor
 
 def predict(input_data_path, model_path='models/model.pkl', preprocessor_path='models/preprocessor.pkl'):
     model = joblib.load(model_path)
