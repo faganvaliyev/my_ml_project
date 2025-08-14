@@ -1,0 +1,8 @@
+joblib
+scikit-learn
+pandas 
+optuna
+xgboost
+catboost
+matplotlib
+seaborn
