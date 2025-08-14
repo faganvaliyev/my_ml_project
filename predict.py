@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 
-def predict(input_data_path, model_path='models/model.pkl', preprocessor_path='models/preprocessor.pkl'):
+def predict(input_data_path, model_path='models/best_params.pkl', preprocessor_path='models/preprocessor.pkl'):
     model = joblib.load(model_path)
     preprocessor = joblib.load(preprocessor_path)
     
