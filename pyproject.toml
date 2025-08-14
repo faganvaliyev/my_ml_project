@@ -7,6 +7,14 @@ requires-python = ">= 3.10"
 authors = [{ name = "faganvaliyev", email = "[velievfeqan.04@gmail.com]" }]
 dependencies = [
     # runtime deps go here, e.g. "pandas>=2.2"
+    "catboost>=1.2.8",
+    "joblib>=1.5.1",
+    "matplotlib>=3.10.5",
+    "optuna>=4.4.0",
+    "pandas>=2.3.1",
+    "scikit-learn>=1.7.1",
+    "seaborn>=0.13.2",
+    "xgboost>=3.0.4",
 ]
 
 # [tool.ruff]
